@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+   <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" type="text/css">
+   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap" rel="stylesheet" type="text/css">
+      <link href="" rel="stylesheet" type="text/css">
+   <style>
+
+    html{
+    scroll-behavior: smooth;
+    }
+body {
+  background: url(https://www.cristaldelacruz.com/wp-content/uploads/2021/03/Wallpaper.jpg), url(https://wallpaperaccess.com/full/364863.jpg);
+}
+
+main {
+  position:relative;
+  color:white;
+}
+
+.title-box{
+  position:relative;
+  margin:auto;
+  text-align:center;
+}
+
+#title {
+  font-family:monospace;
+  font-size:58px;
+  text-shadow:0 0 5px rgba(0,0,0,0.6);
+  text-transform:uppercase;
+  letter-spacing:5px;
+}
+
+.hr-1 {
+  width:450px;
+  height:5px;
+  background-color:white;
+  opacity:0.15;
+  box-shadow:0 0 5px black;
+}
+
+hr {
+  opacity:0;
+}
+
+.quote{
+  letter-spacing:1.5px;
+  font-size:20px;
+  text-shadow:0 0 2.5px black;
+}
+
+#img-div {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  position:relative;
+  margin-top:40px;
+  border-radius:50%;
+}
+
+#img-caption{
+  max-width:450px;
+  text-align:center;
+  border-radius:5px;
+  background-color:rgb(100,100,100);
+  padding:5px 5px 0 5px;
+  text-shadow:0 0 5px black;
+  box-shadow: 0 0 5px black;
+  flex-wrap:wrap;
+  
+}
+.source {
+  color:rgba(255,255,255,0.9);
+  border-radius:5px;
+  text-decoration:none;
+  animation-name:source-a;
+  animation-duration:1.5s;
+  animation-iteration-count:infinite;
+}
+
+@keyframes source-a {
+  0% {color:rgba(255,255,255,0.5);}
+  50% {color:rgba(255,255,255,1);}
+  100% {color:rgba(255,255,255,0.5);}
+}
+
+#image {
+  max-width:70%;
+  border-radius:10px;
+  box-shadow: 0 0 10px black;
+  z-index:1;
+}
+
+#tribute-info {
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  font-family:fira code;
+}
+
+li {
+  background-color:rgba(220,220,220,0.9);
+  padding:15px 10px 15px 20px; 
+  border-radius:10px;
+  box-shadow:0 0 20px rgba(0,0,0,0.41);
+}
+
+.nibariki {
+  padding:0;
+}
+
+.nibariki:hover:after { 
+content:url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Nibariki_%28Hayao_Miyazaki%27s_personal_studio%2C_Butaya%29.jpg/560px-Nibariki_%28Hayao_Miyazaki%27s_personal_studio%2C_Butaya%29.jpg);
+top:0;
+}
+
+.list-of-things {
+  list-style:none;
+  line-height:35px;
+  padding:0;
+  max-width:600px;
+  font-size:18px;;
+  font-weight:400;
+  color:	black;
+  text-shadow:0 0 5px hsla(0,100%,99%,0.5);
+}
+
+#li-links {
+  color:black;
+  border-radius:5px;
+  text-decoration:none;
+  animation-name:links-ground;
+  animation-duration:2.5s;
+  animation-iteration-count:infinite;
+}
+
+.dates {
+  font-weight:bold;
+  font-size:18.5px;
+  color:rgba(150,30,20,0.95);
+  text-shadow:0 0 10px white;
+}
+
+.extra-info {
+  text-align:center;
+  margin-top:80px;
+  font-size:18px;
+  font-weight:bold;
+  color:hsl(0,70%,25%);
+  text-shadow:0 0 15px white, 0 0 2px white;
+  border-radius:50px;
+  padding:0 20px 0 20px; 
+}
+
+#tribute-link {
+  color:hsl(0,80%,25%);
+  border-radius:5px;
+  text-decoration:none;
+  animation-name:links-ground;
+  animation-duration:2.5s;
+  animation-iteration-count:infinite;
+}
+
+@keyframes links-ground{
+  0% {background-color:rgba(0,0,0,0.15);}
+  50% {background-color:rgba(0,0,0,0.3);}
+  100% {background-color:rgba(0,0,0,0.15);}
+}
+
+.jump{
+  margin-top:80px;
+  color:rgba(0,0,0,0.8);
+  font-size:16px;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.jump::before{
+  background-image: url(https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png);
+     background-size: 30px 30px;
+    display:inline-block;
+    width: 30px; 
+    height: 30px;
+    content:"";
+  position:relative;
+  top:10px;
+}
+
+.jump::after{
+  background-image: url(https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png);
+     background-size: 30px 30px;
+    display:inline-block;
+    width: 30px; 
+    height: 30px;
+    content:"";
+  position:relative;
+  top:10px;
+}
+
+@media (max-width:1440px) {
+  .quote, #tribute-info, #img-div {
+  font-size: 21px;    
+  }
+}
+
+@media (max-width:800px) {
+  .quote, #tribute-info, #img-div {
+  font-size: 24px;    
+  }
+}
+   </style>
+
+   <title>Hayao Miyazaki</title>
+ </head>
+  
+ <body>
+   <main id="main">
+     <div class="title-box">
+     <h1 id="title">Hayao Miyazaki</h1>
+       <hr class="hr-1">
+     <span class="quote">"We each need to find our own inspiration. Sometimes it is not easy".</span>
+     </div>
+       <hr class="hr-1">
+     <figure id="img-div">
+       <img id="image" src="https://static01.nyt.com/images/2021/11/24/t-magazine/24tmag-miyazaki-slide-FV6R/24tmag-miyazaki-slide-FV6R-superJumbo.jpg?quality=75&auto=webp">
+       <figcaption id="img-caption">
+         Hayao Miyazaki photographed outside his atelier near Studio Ghibli in Tokyo on <time datetime="2021-10-04">Oct. 4, 2021</time>. <span style="padding-left:10px;"> By Takahiro Kaneyama.</span> <a href="https://www.nytimes.com/2021/11/23/t-magazine/hayao-miyazaki-studio-ghibli.html" class="source" target="_blank">Source</a>
+       </figcaption>
+     </figure>
+     <div id="tribute-info">
+     <ul class="list-of-things">
+       <li><span class="dates"><time datetime="1941">1941</time></span> Born </li>
+       <hr>
+       <li><span class="dates"><time datetime="1963">1963</time></span> Bot first job at Toei animation, as in-between entry-level artist </li>
+       <hr>
+       <li><span class="dates"><time datetime="1965">1965</time></span> Married fellow animator, Akemi Ota</li>
+        <hr>
+       <li><span class="dates"><time datetime="1971">1971</time></span> Left Toei animation and was hired at A-Pro, where while working, he was often using the pseudonym - Teruki Tsutomu (?? ?). </li>
+        <hr>
+       <li><span class="dates"><time datetime="1973">1973</time></span> Miyazaki moved to Zuiyo Eizoi (form <span class="dates"><time datetime="1975">1975</time></span> - Nippon), where he worked on projects like "world masterpiece theater", "Heidi, girl of the alps" and "conan" until <span class="dates"><time datetime="1979">1979</time></span></li>
+        <hr>
+       <li><span class="dates"><time datetime="1979">1979</time></span> He moved to Telecom animation film, to direct his first feature anime film and by doing so won he's firt - the Ofuji Noburo Award, for The castle of cagliostro</li>
+        <hr>
+       <li><span class="dates"><time datetime="1984">1984</time></span> Won the Ofuji Noburo Award, for - Nausicaä of the Valley of the Wind, which grossed 1.48 billion yen at the box and made an aditional 742 milion yen in distribution income</li>
+        <hr>
+       <li><span class="dates"><time datetime="1984">1984</time></span> Opened his own personal studio, named <span class="nibariki"><a id="li-links" href="https://www.google.com/search?q=nibariki+butaya&rlz=1C1GCEA_enGE961GE961&sxsrf=AOaemvK_UMIEhr5Qb48j7uqizPBQUI7hOw:1641501589110&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjXsvf4_Z31AhUpSvEDHcq_BPwQ_AUoAXoECAEQAw&biw=1745&bih=852&dpr=1.1" target="_blank">Nibariki</a></span> </li>
+       <hr>
+       <li><span class="dates"><time datetime="1985">1985</time></span> Co-founded studio Ghibli </li>
+       <hr>
+       <li><span class="dates"><time datetime="1986">1986</time></span> Won the Ofuji Noburo Award, for - Laputa: Castle in the Sky</li>
+       <hr>
+       <li><span class="dates"><time datetime="1988">1988</time></span> Won the Ofuji Noburo Award, for - My Neighbor Totoro</li>
+       <hr>
+       <li><span class="dates"><time datetime="1989">1989</time></span> Won the Mainichi film award for best animation film, for - Kiki's Delivery service</li>
+       <hr>
+       <li><span class="dates"><time datetime="1992">1992</time></span> Won the Mainichi film award for best animation film, for - Porco Rosso</li>
+       <hr>
+       <li><span class="dates"><time datetime="1997">1997</time></span> Won the Mainichi film award for best animation film, for - Princess Mononoke</li>
+       <hr>
+       <li><span class="dates"><time datetime="2001">2001</time></span> Won the Mainichi film award for best animation film, for - Whale Hunt and also for - Spirited Away, for which, he also won Academy award for best animated feature </li>
+       <hr>
+       <li><span class="dates"><time datetime="2004">2004</time></span> Was nominated for Academy Award for best animated feature, for - Howl's Caslte</li>
+       <hr>
+       <li><span class="dates"><time datetime="2012">2012</time></span> He was named "Person of Cultural Merit" by the Japanese government, for outstanding cultural contributions</li>
+       <hr>
+       <li><span class="dates"><time datetime="2013">2013</time></span> Was nominated for Academy Award for best animated feature, for - The Wind Rises</li>
+       <hr >
+       <li><span class="dates"><time datetime="2021">2021</time></span> Hayao Miyazaki, at the age of 80, is preparing a new movie...</li>
+     </ul>
+     <p class="extra-info"> If you are interested to learn more about Hayao Miyazaki's work and bio, follow links to <a id="tribute-link" href="https://en.wikipedia.org/wiki/Hayao_Miyazaki" target="_blank">Wikipedia</a> or <a id="tribute-link" href="https://www.imdb.com/name/nm0594503/?ref_=nmbio_bio_nm" target="-blank">IMDb</a>.
+      </p>
+       <a class="jump" href="#title">jump to beginning</a>
+     </div>
+   </main>
+ </body>
+</html>
